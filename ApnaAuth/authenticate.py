@@ -22,5 +22,5 @@ class ApnaAuthentication(authentication.BaseAuthentication):
                                                   f'NOT exists inside the Django USER Models')
 
         return (user, None)  # from the returned tuple (user, None) Middleware=contrib.auth saves "user" into request.user attr,
-        # and the second item inside the tuple (in this ase None), inside the
+        # and the second item inside the tuple (in this Case None), inside the
         # request.auth attr (typically the raw token string or Instance is saved inside the request.auth attr)
