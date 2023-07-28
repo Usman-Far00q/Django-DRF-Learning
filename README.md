@@ -28,3 +28,4 @@ artists, the album belongs to only ONE of them}, but instead of **one-to-many**,
 ## A few Useful Links for learning how to write MARKDOWN files (.md files):  
 - [Writing Github README](https://medium.com/analytics-vidhya/writing-github-readme-e593f278a796)
 - [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- [The Complete Guide of Readme Markdown Syntax](https://github.com/darsaveli/Readme-Markdown-Syntax/tree/main)
