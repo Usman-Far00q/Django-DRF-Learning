@@ -1,0 +1,29 @@
+# Use usman_test_user/test_pass user/password credentials
+version: '3.1'
+
+services:
+
+  my_dockerized_db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: test_pass
+      POSTGRES_USER: usman_test_user
+      POSTGRES_DB: ProjectDB
+    volumes:
+      - /home/usman/Desktop/DB_FILE:/var/lib/postgresql/data
+
+  adminer:
+#    adminer is a useful tool for viewing DBs access it here --> http://localhost:8085/
+    image: adminer
+    depends_on:
+      - my_dockerized_db
+    restart: always
+    ports:
+      - 8085:8080
+
+#volumes:
+#  A_named_vol:
+
+
+#for more info on docker volumes read this--> https://maximorlov.com/docker-compose-syntax-volume-or-bind-mount/
