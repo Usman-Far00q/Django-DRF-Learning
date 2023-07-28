@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "13389070-3578-4a0f-9595-83606a2df614",
+		"name": "Django_Project_1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List All Artists",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "MERA-USERNAME",
+						"value": "usman",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/artists/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"artists",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create An Artist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Uss\",\n    \"stage_name\": \"Meo\",\n    \"age\":12\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/artists/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"artists",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify/Uodate An Artist",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"first_name\": \"Uss\",\n    \"stage_name\": \"Meo\",\n    \"gooo\" : \"ga\",\n    \"age\":12\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/artists/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"artists",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All Albums",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 78c62c31f9dbeac6c218e737024a39f8375db52c",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/albums/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"albums",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Auth Token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"usman\",\n    \"password\": \"test123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/gimme-token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"gimme-token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Songs",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
