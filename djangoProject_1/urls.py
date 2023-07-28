@@ -7,4 +7,5 @@ urlpatterns = [
     path('artists/', include('Artist.urls')),
     path('albums/', include('Album.urls')),
     path('gimme-token', views.obtain_auth_token),
+    path('songs/', include('Song.urls')),
 ]
