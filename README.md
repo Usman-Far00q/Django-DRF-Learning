@@ -14,8 +14,15 @@ artists, the album belongs to only ONE of them}, but instead of **one-to-many**,
 
 <br>
 <br>
+
+# Postman Collection of API endpoints:
+The Postman Collection used throughout this Project can be found [here](https://github.com/Usman-Far00q/Django-DRF-Learning/blob/main/Project_Postman_Collection.json)
+
 <br>
 <br>
+
+
+
 
 ## A few Useful Links for learning what Serialization is in Django Rest Framework (aka DRF):  
 - [Effectively Using Django REST Framework Serializers](https://testdriven.io/blog/drf-serializers/)  
