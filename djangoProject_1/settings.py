@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'Artist',
     'Album',
+    'Song',
     'rest_framework.authtoken',  # The baked in Django Token authentication
     'ApnaAuth',
 ]
