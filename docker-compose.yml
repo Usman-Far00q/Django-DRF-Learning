@@ -22,13 +22,25 @@ services:
       - my_dockerized_db
     restart: always
     ports:
-      - 8085:8080
+      - "8085:8080"
+
+# this is our deockerized Django Server, you can access it here -->http://localhost:8000/
+  django_api:
+    build: .
+    command: "python manage.py runserver 0.0.0.0:8000"
+    depends_on:
+      - my_dockerized_db
+    environment:
+      DB_HOST: "my_dockerized_db"
+    restart: always
+    ports:
+      - "8000:8000"
 
 volumes:
   A_named_vol_for_db_data:
 
 
-# to build and use all dockerized stuff, run --> sudo docker-compose up
+# to build and use all dockerized stuff, run --> sudo docker-compose up --build
 # to remove all dockerized stuff, run --> sudo docker-compose down -v
 
 

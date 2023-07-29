@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -86,7 +86,7 @@ DATABASES = {
         'NAME': 'ProjectDB',
         'USER': 'usman_test_user',
         'PASSWORD': 'test_pass',
-        'HOST': '127.0.0.1',
+        'HOST': os.environ.get("DB_HOST", '127.0.0.1'),
         'PORT': '5432',
     }
 }
