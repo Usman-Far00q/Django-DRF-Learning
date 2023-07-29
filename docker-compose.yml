@@ -43,5 +43,9 @@ volumes:
 # to build and use all dockerized stuff, run --> sudo docker-compose up --build
 # to remove all dockerized stuff, run --> sudo docker-compose down -v
 
+# to run shell of the Django use
+#  this command (after upping all the containers using docker-compose obviously :0 )--> sudo docker-compose exec <Name_of_container> python3 ./manage.py shell
+#  aka sudo docker-compose exec  django_api python3 ./manage.py shell
+
 
 # for more info on docker volumes read this--> https://maximorlov.com/docker-compose-syntax-volume-or-bind-mount/
