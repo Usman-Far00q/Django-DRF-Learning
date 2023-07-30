@@ -39,6 +39,7 @@ The Postman Collection used throughout this Project can be found [here](https://
 
 ## Useful Resources to Understand Django-0RM
 - Learn Django-ORM using this [Cheat-sheet](https://github.com/Usman-Far00q/Django-DRF-Learning/blob/main/Django%20ORM%20Cheat-Sheet.md)
+- You can also read the ```Chapter-7 | Queries and the Database Layer``` of [this_book](https://github.com/Usman-Far00q/Django-DRF-Learning/blob/main/Daniel%20Audrey%20Feldroy%20-%20Two%20Scoops%20of%20Django%203.x%20(2020).pdf)
 
 
 <br>
