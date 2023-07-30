@@ -36,6 +36,12 @@ The Postman Collection used throughout this Project can be found [here](https://
   
 <br>
 <br>
+
+## Useful Resources to Understand Django-0RM
+- Learn Django-ORM using this [Cheat-sheet](https://github.com/Usman-Far00q/Django-DRF-Learning/blob/main/Django%20ORM%20Cheat-Sheet.md)
+
+
+<br>
 <br>
 
 ## A few Useful Links for learning how to write MARKDOWN files (.md files):  
